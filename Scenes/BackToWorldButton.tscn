@@ -1,0 +1,13 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://Scripts/BackButton.gd" type="Script" id=1]
+[ext_resource path="res://assets/Icons/ico_back.png" type="Texture" id=2]
+
+[node name="BackToWorldButton" type="Button"]
+margin_right = 64.0
+margin_bottom = 64.0
+icon = ExtResource( 2 )
+icon_align = 1
+script = ExtResource( 1 )
+
+[connection signal="pressed" from="." to="." method="_on_BackButton_pressed"]

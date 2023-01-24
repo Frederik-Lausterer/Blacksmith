@@ -1,0 +1,56 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://Scripts/CraftingButton.gd" type="Script" id=1]
+[ext_resource path="res://Scripts/ShoppingButton.gd" type="Script" id=2]
+[ext_resource path="res://Scripts/RichTextLabel.gd" type="Script" id=3]
+[ext_resource path="res://Scripts/ResearchButton.gd" type="Script" id=4]
+
+[node name="World" type="Node2D"]
+
+[node name="Buttons" type="Node" parent="."]
+
+[node name="CraftingButton" type="Button" parent="Buttons"]
+margin_left = 769.0
+margin_top = 450.0
+margin_right = 941.0
+margin_bottom = 505.0
+rect_pivot_offset = Vector2( 0, 106 )
+text = "Go To your Smithy"
+script = ExtResource( 1 )
+
+[node name="ShoppingButton" type="Button" parent="Buttons"]
+margin_left = 720.0
+margin_top = 291.0
+margin_right = 883.0
+margin_bottom = 334.0
+text = "Go to the Market"
+script = ExtResource( 2 )
+
+[node name="ResearchButton" type="Button" parent="Buttons"]
+margin_left = 456.0
+margin_top = 436.0
+margin_right = 628.0
+margin_bottom = 491.0
+rect_pivot_offset = Vector2( 0, 106 )
+text = "Go to Research"
+script = ExtResource( 4 )
+
+[node name="RichTextLabel" type="RichTextLabel" parent="."]
+margin_left = 395.0
+margin_top = 2.0
+margin_right = 489.0
+margin_bottom = 21.0
+rect_scale = Vector2( 3, 3 )
+text = "WORLD MAP"
+
+[node name="Stats" type="RichTextLabel" parent="."]
+margin_left = 446.0
+margin_top = 269.0
+margin_right = 802.0
+margin_bottom = 309.0
+text = "Gold = "
+script = ExtResource( 3 )
+
+[connection signal="pressed" from="Buttons/CraftingButton" to="Buttons/CraftingButton" method="_on_CraftingButton_pressed"]
+[connection signal="pressed" from="Buttons/ShoppingButton" to="Buttons/ShoppingButton" method="_on_ShoppingButton_pressed"]
+[connection signal="pressed" from="Buttons/ResearchButton" to="Buttons/ResearchButton" method="_on_ResearchButton_pressed"]

@@ -1,0 +1,49 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://Scenes/BackToWorldButton.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Scripts/ResearchJewlery.gd" type="Script" id=2]
+[ext_resource path="res://Scripts/RichTextLabel.gd" type="Script" id=3]
+
+[node name="Research" type="Node2D"]
+
+[node name="Node" type="Node" parent="."]
+
+[node name="ResearchJewlery" type="Button" parent="Node"]
+margin_left = 114.0
+margin_top = 204.0
+margin_right = 238.0
+margin_bottom = 272.0
+rect_pivot_offset = Vector2( 23, 65 )
+text = "More Money"
+script = ExtResource( 2 )
+
+[node name="RichTextLabel" type="RichTextLabel" parent="Node"]
+margin_right = 94.0
+margin_bottom = 26.0
+rect_scale = Vector2( 2, 2 )
+text = "Research"
+
+[node name="BackToWorldButton" parent="Node" instance=ExtResource( 1 )]
+margin_top = 513.0
+margin_bottom = 577.0
+
+[node name="Research Idle Money" type="Button" parent="Node"]
+margin_left = 269.0
+margin_top = 341.0
+margin_right = 393.0
+margin_bottom = 409.0
+rect_pivot_offset = Vector2( 23, 65 )
+text = "Research Idle"
+script = ExtResource( 2 )
+
+[node name="Stats" type="RichTextLabel" parent="."]
+margin_left = 446.0
+margin_top = 269.0
+margin_right = 802.0
+margin_bottom = 309.0
+text = "Gold = "
+script = ExtResource( 3 )
+
+[connection signal="pressed" from="Node/ResearchJewlery" to="Node/ResearchJewlery" method="_on_ResearchJewlery_pressed"]
+[connection signal="pressed" from="Node/Research Idle Money" to="Node/ResearchJewlery" method="_on_Research_Idle_Money_pressed"]
+[connection signal="pressed" from="Node/Research Idle Money" to="Node/Research Idle Money" method="_on_ResearchJewlery_pressed"]

@@ -1,0 +1,33 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://Scenes/BackToWorldButton.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Scripts/Sell Jewlery.gd" type="Script" id=2]
+[ext_resource path="res://Scripts/RichTextLabel.gd" type="Script" id=3]
+
+[node name="Shop" type="Node2D"]
+
+[node name="BackToWorldButton" parent="." instance=ExtResource( 1 )]
+margin_left = 898.0
+margin_top = 493.0
+margin_right = 962.0
+margin_bottom = 557.0
+
+[node name="Stats" type="RichTextLabel" parent="."]
+margin_left = 62.0
+margin_top = 73.0
+margin_right = 418.0
+margin_bottom = 113.0
+text = "Gold = "
+script = ExtResource( 3 )
+
+[node name="Node" type="Node" parent="."]
+
+[node name="SellJewlery" type="Button" parent="Node"]
+margin_left = 100.0
+margin_top = 145.0
+margin_right = 228.0
+margin_bottom = 273.0
+text = "Sell your Jewlery"
+script = ExtResource( 2 )
+
+[connection signal="pressed" from="Node/SellJewlery" to="Node/SellJewlery" method="_on_SellJewlery_pressed"]
