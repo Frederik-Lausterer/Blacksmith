@@ -27,10 +27,10 @@ text = "Go to the Market"
 script = ExtResource( 2 )
 
 [node name="ResearchButton" type="Button" parent="Buttons"]
-margin_left = 456.0
-margin_top = 436.0
-margin_right = 628.0
-margin_bottom = 491.0
+margin_left = 358.0
+margin_top = 433.0
+margin_right = 530.0
+margin_bottom = 488.0
 rect_pivot_offset = Vector2( 0, 106 )
 text = "Go to Research"
 script = ExtResource( 4 )
@@ -49,6 +49,7 @@ margin_top = 268.0
 margin_right = 802.0
 margin_bottom = 308.0
 text = "Placeholder for Player stats"
+
 script = ExtResource( 3 )
 
 [connection signal="pressed" from="Buttons/CraftingButton" to="Buttons/CraftingButton" method="_on_CraftingButton_pressed"]
