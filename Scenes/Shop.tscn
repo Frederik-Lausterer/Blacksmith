@@ -1,8 +1,9 @@
-[gd_scene load_steps=4 format=2]
+[gd_scene load_steps=5 format=2]
 
 [ext_resource path="res://Scenes/BackToWorldButton.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Scripts/Sell Jewlery.gd" type="Script" id=2]
 [ext_resource path="res://Scripts/RichTextLabel.gd" type="Script" id=3]
+[ext_resource path="res://Resource/Jewlery.tres" type="Resource" id=4]
 
 [node name="Shop" type="Node2D"]
 
@@ -29,5 +30,6 @@ margin_right = 228.0
 margin_bottom = 273.0
 text = "Sell your Jewlery"
 script = ExtResource( 2 )
+res = ExtResource( 4 )
 
 [connection signal="pressed" from="Node/SellJewlery" to="Node/SellJewlery" method="_on_SellJewlery_pressed"]
