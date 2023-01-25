@@ -48,7 +48,7 @@ margin_left = 446.0
 margin_top = 268.0
 margin_right = 802.0
 margin_bottom = 308.0
-text = "Statusbar"
+text = "Placeholder for Player stats"
 script = ExtResource( 3 )
 
 [connection signal="pressed" from="Buttons/CraftingButton" to="Buttons/CraftingButton" method="_on_CraftingButton_pressed"]
