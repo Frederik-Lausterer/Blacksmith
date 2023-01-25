@@ -4,6 +4,6 @@
 
 [resource]
 script = ExtResource( 1 )
-sellGold = 15
-buyGold = 10
-name = "Jewlery"
+sellGold = 1
+buyGold = 2
+name = "Dirt"

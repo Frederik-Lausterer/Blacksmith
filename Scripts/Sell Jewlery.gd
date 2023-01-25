@@ -4,7 +4,7 @@ export(Resource) var res
 
 
 func _ready():
-	pass # Replace with function body.
+	self.text = res.name
 
 
 

@@ -1,7 +1,8 @@
 [gd_scene load_steps=3 format=2]
 
 [ext_resource path="res://ItemBase.gd" type="Script" id=1]
-[ext_resource path="res://Resource/Jewlery.tres" type="Resource" id=2]
+[ext_resource path="res://Resource/Jewelry.tres" type="Resource" id=2]
+
 
 [node name="Item" type="Node2D"]
 script = ExtResource( 1 )
