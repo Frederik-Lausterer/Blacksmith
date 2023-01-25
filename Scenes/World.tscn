@@ -48,7 +48,7 @@ margin_left = 446.0
 margin_top = 269.0
 margin_right = 802.0
 margin_bottom = 309.0
-text = "Gold = "
+text = "Statusbar"
 script = ExtResource( 3 )
 
 [connection signal="pressed" from="Buttons/CraftingButton" to="Buttons/CraftingButton" method="_on_CraftingButton_pressed"]
