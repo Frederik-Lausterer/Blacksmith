@@ -15,12 +15,18 @@ _global_script_classes=[ {
 "path": "res://addons/godot-git-plugin/git_api.gdns"
 }, {
 "base": "Resource",
+"class": "ITEM_CLASS",
+"language": "GDScript",
+"path": "res://Items/Classes/item_class.gd"
+}, {
+"base": "Resource",
 "class": "ItemRes",
 "language": "GDScript",
 "path": "res://Scripts/ItemRes.gd"
 } ]
 _global_script_class_icons={
 "GitAPI": "",
+"ITEM_CLASS": "",
 "ItemRes": ""
 }
 
